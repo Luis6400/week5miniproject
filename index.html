@@ -15,7 +15,17 @@
 
 <body>
   <header>
-    <!-- place navbar here -->
+    <title>Project Time Manager</title>
+    <script>
+      function updateTime() {
+        var d = new Date();
+        var timeZoneOffset = -6; 
+        d.setHours(d.getHours() + timeZoneOffset);
+        var dateTimeString = d.toLocaleString();
+        document.getElementById("currentDateTime").innerHTML = dateTimeString;
+      }
+      setInterval(updateTime, 1000); 
+    </script>
   </header>
   <main>
     <div class="container">
