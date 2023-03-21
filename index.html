@@ -15,8 +15,27 @@
 
 <body>
   <header>
-    <!-- place navbar here -->
+      <title>Project Time Manager</title>
+    <script>
+      function updateTime() {
+        var d = new Date();
+        var timeZoneOffset = -6; 
+        d.setHours(d.getHours() + timeZoneOffset);
+        var dateTimeString = d.toLocaleString();
+        document.getElementById("currentDateTime").innerHTML = dateTimeString;
+      }
+      setInterval(updateTime, 1000); 
+    </script>
+  </head>
+  <body>
+    <h1>Project Time Manager</h1>
+    <p>Current date and time in Mountain Standard Time:</p>
+    <p id="currentDateTime"></p>
   </header>
+    </script>
+  </head>
+<body>
+
   <main>
     <div class="container">
         <div class="row">
