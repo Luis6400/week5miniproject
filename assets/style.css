@@ -1,0 +1,11 @@
+.root {
+    --light:#deebec;
+    --lightblue:#bed9dd;
+    --midblue:#aecfd0;
+    --lightgreen:#73b3b2;
+    --darkgreen:#3c979f;
+}
+
+.addheader {
+    background-color: var(--lightgreen);
+}
